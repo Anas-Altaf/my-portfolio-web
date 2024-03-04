@@ -18,7 +18,7 @@
     --blue-1: #023580;
     --yellow-0: #ffd428;
     --yellow-1: #ffde59;
-    --purple-0: #ff59f7;
+    --purple-0: #ff38f5;
     --purple-1: #ff66f8;
 }
 
@@ -204,7 +204,7 @@ body {
 }
 
 .picture-area-2>img {
-    width: 30rem;
+    width: 90%;
 }
 
 #about-section>.text-area-2 {
@@ -245,7 +245,7 @@ body {
 } */
 
 .skill-list-area {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
@@ -254,9 +254,8 @@ body {
     color: black !important;
     font-weight: bold !important;
     font-family: "Source Code Pro", sans-serif !important;
-    width: 75% !important;
     border-radius: 25px !important;
-    color: black !important;
+    border-right: 1px black !important;
 }
 
 .skill-heading-area>img {
