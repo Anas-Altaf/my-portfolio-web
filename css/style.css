@@ -14,7 +14,7 @@
 
 
 :root {
-    --blue-0: #05194d;
+    --blue-0: #05184B;
     --blue-1: #023580;
     --yellow-0: #ffd428;
     --yellow-1: #ffde59;
@@ -24,7 +24,7 @@
 
 body {
     background: var(--blue-0);
-    background: linear-gradient(180deg, rgb(0, 17, 61) 13%, rgba(0, 56, 193, 1) 100%) no-repeat;
+    background: linear-gradient(180deg, rgba(5, 24, 75, 1) 13%, rgba(0, 56, 193, 1) 100%) no-repeat;
 }
 
 /* >========= NAVBAR =========< */
@@ -41,14 +41,15 @@ body {
     position: absolute;
     top: 30px;
     left: 10px;
-    opacity: 0.8;
+    opacity: 1;
+    filter: blur(50%);
 }
 
 #blue-light-2 {
     position: absolute;
     top: 30px;
     left: 10px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 #blue-light-3 {
@@ -148,7 +149,6 @@ body {
 .text-area>p>span {
     /* color: var(--purple-0);
     font-size: 1.1rem; */
-
 }
 
 .btn-1 {
@@ -156,6 +156,7 @@ body {
     outline: none;
     border-radius: 100px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .btn-purple {
@@ -202,9 +203,13 @@ body {
     margin: auto;
 }
 
+.picture-area-2>img {
+    width: 30rem;
+}
+
 #about-section>.text-area-2 {
     width: 50%;
-    padding: 100px 45px;
+    padding: 100px 0px;
 }
 
 #about-section>.text-area-2>* {
@@ -226,8 +231,40 @@ body {
 }
 
 /* >========= SKILLS =========< */
-.skill-section {
-    border: 2px solid yellow;
+#skill-section {
+    /* border: 2px solid yellow; */
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 70%;
+    margin: auto;
+}
+
+/* .skill-heading-area {
+    display: flex;
+    flex-direction: row;
+} */
+
+.skill-list-area {
+    width: 60%;
+    margin: auto;
+}
+
+.list-custom-css {
+    background-color: var(--yellow-0) !important;
+    color: black !important;
+    font-weight: bold !important;
+    font-family: "Source Code Pro", sans-serif !important;
+    width: 75% !important;
+    border-radius: 25px !important;
+    color: black !important;
+}
+
+.skill-heading-area>img {
+    width: 15%;
+}
+
+.skill-heading-area>h2 {
+    display: inline;
 }
 
 /* >========= CONTACT =========< */
