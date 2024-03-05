@@ -108,7 +108,7 @@ body {
 #hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 36rem;
+    height: 100vh;
     background: url(../images/bg-1.png) no-repeat center center/cover fixed;
     width: 100%;
 
@@ -187,7 +187,7 @@ body {
 }
 
 #hero-section .picture-area>img {
-    width: 30rem;
+    width: 70%;
 }
 
 /* >========= ABOUT =========< */
@@ -224,6 +224,7 @@ body {
 .text-area-2>p {
     font-family: "Source Code Pro", sans-serif;
     margin-top: 20px;
+    width: 70%;
 }
 
 .text-area-2>p span {
@@ -237,6 +238,7 @@ body {
     grid-template-rows: auto auto;
     width: 70%;
     margin: auto;
+    margin-bottom: 5rem;
 }
 
 /* .skill-heading-area {
@@ -255,14 +257,19 @@ body {
     font-weight: bold !important;
     font-family: "Source Code Pro", sans-serif !important;
     border-radius: 25px !important;
-    border-right: 1px black !important;
+    border-right: 1px solid black !important;
 }
-.skill-heading-area{
+
+.skill-heading-area {
     display: flex;
     flex-direction: row;
 }
+
 .skill-heading-area>img {
     width: 15%;
+    position: relative;
+    left: 5%;
+    top: 5%;
 }
 
 .skill-heading-area>h2 {
@@ -271,3 +278,40 @@ body {
 }
 
 /* >========= CONTACT =========< */
+#contact-section {
+    border: 2px solid green;
+}
+
+/* >========= FOOTER =========< */
+footer {
+    position: relative;
+    bottom: 0px;
+    left: 0%;
+
+}
+
+footer>img {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+.footer-text {
+    position: absolute;
+    /* transform: translate(15%, -200%); */
+    bottom: 15%;
+    left: 4%;
+    color: black;
+
+}
+
+footer #color-boxes {
+    /* border: 2px solid yellow; */
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: auto;
+    left: auto;
+}
