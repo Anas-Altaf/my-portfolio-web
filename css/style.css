@@ -61,7 +61,7 @@ body {
 
 #blue-light-4 {
     position: absolute;
-    bottom: -10%;
+    bottom: 10%;
     left: 40%;
     opacity: 0.8;
 }
@@ -147,8 +147,8 @@ body {
 }
 
 .text-area>p>span {
-    /* color: var(--purple-0);
-    font-size: 1.1rem; */
+    /* color: var(--purple-0); */
+    font-size: 1.1rem;
 }
 
 .btn-1 {
@@ -257,13 +257,17 @@ body {
     border-radius: 25px !important;
     border-right: 1px black !important;
 }
-
+.skill-heading-area{
+    display: flex;
+    flex-direction: row;
+}
 .skill-heading-area>img {
     width: 15%;
 }
 
 .skill-heading-area>h2 {
     display: inline;
+    align-self: flex-end;
 }
 
 /* >========= CONTACT =========< */
