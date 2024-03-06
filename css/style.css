@@ -285,6 +285,10 @@ body {
     margin: auto;
 }
 
+.skill-list-area>* {
+    margin-bottom: 10px;
+}
+
 .list-custom-css {
     background-color: var(--yellow-0) !important;
     color: black !important;
@@ -322,7 +326,7 @@ body {
     grid-template-rows: auto auto;
     /* background-color: white; */
     gap: 2px;
-    margin: 3% 4%;
+    margin: 3% 6%;
 }
 
 #contact-section>* {
@@ -343,9 +347,11 @@ body {
     margin: 2% 5%;
 }
 
-.contact-text-area p {
+.contact-text-area a {
     margin: 0% 7%;
     padding: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 .contact-social-area,
