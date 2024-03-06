@@ -8,10 +8,29 @@
     margin: 0px;
     padding: 0px;
     font-family: "Poppins", sans-serif;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
     color: white;
+
 }
 
+*::selection {
+
+    color: white;
+    background: black;
+
+}
+
+p {
+    z-index: 1 !important;
+}
+
+img {
+    pointer-events: none !important;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none
+}
 
 :root {
     --blue-0: #05184B;
@@ -22,6 +41,16 @@
     --purple-1: #ff66f8;
 }
 
+/* Extra CSS  */
+.color-purple-0 {
+    color: var(--purple-0);
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+/* Main CSS  */
 body {
     background: var(--blue-0);
     background: linear-gradient(180deg, rgba(5, 24, 75, 1) 13%, rgba(0, 56, 193, 1) 100%) no-repeat;
@@ -35,6 +64,10 @@ body {
     grid-template-columns: 1fr 1fr;
     height: 70px;
     border-bottom: 1px solid #8181812e;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 99;
 }
 
 #blue-light {
@@ -111,7 +144,8 @@ body {
     height: 100vh;
     background: url(../images/bg-1.png) no-repeat center center/cover fixed;
     width: 100%;
-
+    margin-top: 10px;
+    padding-top: 100px;
 }
 
 #hero-section .text-area {
@@ -277,9 +311,16 @@ body {
     align-self: flex-end;
 }
 
+/* >========= PROJECTS =========< */
+
+
 /* >========= CONTACT =========< */
 #contact-section {
-    border: 2px solid green;
+    border: 2px solid yellow;
+}
+
+#contact-section>h2 {
+    margin: 3% 3%;
 }
 
 /* >========= FOOTER =========< */
