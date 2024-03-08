@@ -364,8 +364,10 @@ body {
 
 .img-wrapper {
     display: grid;
-    margin-left: 5px;
-
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-row: auto;
+    grid-column : auto;
 }
 
 .contact-social-area .img-wrapper a,
