@@ -36,14 +36,15 @@ img {
     --yellow-1: #ffde59;
     --purple-0: #ff38f5;
     --purple-1: #ff66f8;
-    --prj-1: url(../images/Project-1.png) center center/cover no-repeat content-box scroll;
-    --prj-2: url(../images/Project-2.png) center center/cover no-repeat content-box scroll;
-    --prj-3: url(../images/Project-3.png) center center/cover no-repeat content-box scroll;
-    --prj-4: url(../images/Project-4.png) center center/cover no-repeat content-box scroll;
-    --prj-5: url(../images/Project-5.png) center center/cover no-repeat content-box scroll;
-    --prj-6: url(../images/Project-6.png) center center/cover no-repeat content-box scroll;
-    --prj-7: url(../images/Project-7.png) center center/cover no-repeat content-box scroll;
-    --prj-8: url(../images/Project-8.png) center center/cover no-repeat content-box scroll;
+    --image-properties  : center center/cover no-repeat content-box scroll; 
+    --prj-1: url(../images/Project-1.png) var(--image-properties);
+    --prj-2: url(../images/Project-2.png) var(--image-properties);
+    --prj-3: url(../images/Project-3.png) var(--image-properties);
+    --prj-4: url(../images/Project-4.png) var(--image-properties);
+    --prj-5: url(../images/Project-5.png) var(--image-properties);
+    --prj-6: url(../images/Project-6.png) var(--image-properties);
+    --prj-7: url(../images/Project-7.png) var(--image-properties);
+    --prj-8: url(../images/Project-8.png) var(--image-properties);
 }
 
 /* Extra CSS  */ 
