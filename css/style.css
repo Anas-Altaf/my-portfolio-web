@@ -455,10 +455,6 @@ body {
     margin: 3% 6%;
 }
 
-#contact-section>* {
-    /* background-color: black; */
-}
-
 #contact-section>h2 {
     grid-column: span 2;
     margin: 0px;
