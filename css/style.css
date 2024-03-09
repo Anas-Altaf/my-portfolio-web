@@ -10,14 +10,11 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
     color: white;
-
 }
 
 *::selection {
-
     color: white;
     background: black;
-
 }
 
 p {
