@@ -216,6 +216,33 @@ body {
 
 .btn-purple img {
     color: var(--yellow-0) !important;
+    animation: rightToLeftMove 2s ease-in-out 0s infinite normal forwards;
+}
+
+@keyframes rightToLeftMove {
+    0% {
+        translate: 0px;
+    }
+
+    20% {
+        translate: 1px;
+    }
+
+    40% {
+        translate: 2px;
+    }
+
+    60% {
+        translate: -1px;
+    }
+
+    80% {
+        translate: -2px;
+    }
+
+    100% {
+        translate: 0px;
+    }
 }
 
 .btn-white {
@@ -348,7 +375,7 @@ body {
     background: var(--prj-1);
     border-radius: 5px;
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: center;
     text-decoration: none;
     color: black;
