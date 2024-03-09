@@ -420,7 +420,6 @@ footer #color-boxes {
 /* >========= MEDIA QUERIES =========< */
 
 @media only screen and (max-width: 767px) {
-
     p {
         z-index: initial;
     }
@@ -459,7 +458,6 @@ footer #color-boxes {
         height: 90vh;
         margin-top: 0px;
         padding-top: 0px;
-
     }
 
     #hero-section .picture-area>img {
