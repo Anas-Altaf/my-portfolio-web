@@ -426,14 +426,20 @@ footer #color-boxes {
     }
 
     /* >========= Nav-Bar =========< */
+    #navbar-section {
+        position: sticky;
+        margin-bottom: 40px;
+    }
+
     #navbar {
         display: flex;
         align-items: center;
         justify-content: space-around;
         z-index: auto !important;
-        height: 40px;
         background: none;
         background-color: var(--blue-0);
+        height: 40px;
+        /* position: sticky; */
     }
 
     #navbar ul {
@@ -503,7 +509,7 @@ footer #color-boxes {
     #about-section>.text-area-2 {
         width: fit-content;
         margin: 2px auto;
-        padding: auto;
+        padding: 5px;
     }
 
     .text-area-2 p {
