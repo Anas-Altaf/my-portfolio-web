@@ -36,7 +36,7 @@ img {
     --yellow-1: #ffde59;
     --purple-0: #ff38f5;
     --purple-1: #ff66f8;
-    --image-properties  : center center/cover no-repeat content-box scroll; 
+    --image-properties: center center/cover no-repeat content-box scroll;
     --prj-1: url(../images/Project-1.png) var(--image-properties);
     --prj-2: url(../images/Project-2.png) var(--image-properties);
     --prj-3: url(../images/Project-3.png) var(--image-properties);
@@ -47,7 +47,7 @@ img {
     --prj-8: url(../images/Project-8.png) var(--image-properties);
 }
 
-/* Extra CSS  */ 
+/* Extra CSS  */
 .color-purple-0 {
     color: var(--purple-0);
 }
