@@ -428,14 +428,14 @@ footer #color-boxes {
     /* >========= Nav-Bar =========< */
     #navbar-section {
         position: sticky;
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
     }
 
     #navbar {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        z-index: auto !important;
+        z-index: 0 !important;
         background: none;
         background-color: var(--blue-0);
         height: 40px;
