@@ -36,6 +36,14 @@ img {
     --yellow-1: #ffde59;
     --purple-0: #ff38f5;
     --purple-1: #ff66f8;
+    --prj-1: url(../images/Project-1.png) center center/cover no-repeat content-box scroll;
+    --prj-2: url(../images/Project-2.png) center center/cover no-repeat content-box scroll;
+    --prj-3: url(../images/Project-3.png) center center/cover no-repeat content-box scroll;
+    --prj-4: url(../images/Project-4.png) center center/cover no-repeat content-box scroll;
+    --prj-5: url(../images/Project-5.png) center center/cover no-repeat content-box scroll;
+    --prj-6: url(../images/Project-6.png) center center/cover no-repeat content-box scroll;
+    --prj-7: url(../images/Project-7.png) center center/cover no-repeat content-box scroll;
+    --prj-8: url(../images/Project-8.png) center center/cover no-repeat content-box scroll;
 }
 
 /* Extra CSS  */
@@ -55,16 +63,16 @@ body {
 
 /* >========= NAVBAR =========< */
 #navbar {
-    background: url(../images/bg-2.png) no-repeat center/cover fixed;
+    background: url(../images/bg-2.png) center center/cover no-repeat content-box fixed;
     background-color: var(--blue-0);
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 70px;
     border-bottom: 1px solid #8181812e;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0px;
-    z-index: 99;
+    z-index: 10;
 }
 
 #blue-light {
@@ -99,24 +107,32 @@ body {
 #navbar ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
-    margin: auto;
+    padding: 0px;
 }
 
-#navbar ul li img {
+/* #navbar ul li img {
     width: 40px;
-}
+} */
 
 #navbar ul li {
     list-style: none;
+    margin-top: 15px;
 }
 
 #navbar ul li a {
     text-decoration: none;
-    margin: 4px 30px;
+    color: white;
+    text-shadow: 0px 20px 15px #000000b5;
+    transition: font-size 0.5s ease 0s;
+    padding: 10px 30px;
+
 }
 
+#navbar ul li a:hover {
+    color: var(--yellow-1);
+}
 
 #navbar p {
     color: white;
@@ -139,10 +155,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vmin;
-    background: url(../images/bg-2.png) no-repeat center center/cover fixed;
+    background: url(../images/bg-2.png) center center/cover no-repeat content-box fixed;
     width: 100%;
-    margin-top: 10px;
-    padding-top: 100px;
 }
 
 #hero-section .text-area {
@@ -273,10 +287,6 @@ body {
     margin-bottom: 5rem;
 }
 
-/* .skill-heading-area {
-    display: flex;
-    flex-direction: row;
-} */
 
 .skill-list-area {
     width: 95%;
@@ -299,6 +309,7 @@ body {
 .skill-heading-area {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
 .skill-heading-area>img {
@@ -314,6 +325,90 @@ body {
 }
 
 /* >========= PROJECTS =========< */
+#projects-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.projects-wrapper {
+    display: grid;
+    gap: 5px;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    margin-top: 15px;
+}
+
+.projects-wrapper a {
+    box-shadow: 1px 5px 4px 0px #000000f5;
+    text-align: center;
+    height: 10rem;
+    width: 10rem;
+    background: var(--prj-1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+    filter: saturate(1.2);
+    font-family: "Source Code Pro", sans-serif;
+    transition: all 0.5s ease 0s;
+}
+
+.projects-wrapper a:hover {
+    box-shadow: 1px 0px 4px 0px #000000f5;
+    transform: scale(1.09);
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Projets list  */
+#project-1 {
+    background: var(--prj-1);
+    grid-row: span 2;
+    height: 20rem;
+}
+
+#project-2 {
+    background: var(--prj-2);
+}
+
+#project-3 {
+    background: var(--prj-3);
+    grid-column: span 2;
+    height: 10rem;
+    width: 20rem;
+}
+
+#project-4 {
+    background: var(--prj-4);
+}
+
+#project-5 {
+    background: var(--prj-5);
+}
+
+#project-6 {
+    background: var(--prj-6);
+    grid-row: span 2;
+    height: 20rem;
+}
+
+#project-7 {
+    background: var(--prj-7);
+    grid-column: span 2;
+    height: 10rem;
+    width: 20rem;
+}
+
+#project-8 {
+    background: var(--prj-8);
+}
+
+
 
 
 /* >========= CONTACT =========< */
@@ -332,12 +427,11 @@ body {
 }
 
 #contact-section>h2 {
-
     grid-column: span 2;
     margin: 0px;
     padding: 0px;
     width: max-content;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
 .contact-text-area h5 {
@@ -372,6 +466,15 @@ body {
 .contact-social-area .img-wrapper img {
     background-color: white;
     border-radius: 5px;
+    box-shadow: 0px 20px 15px 0px #000000b5;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-social-area .img-wrapper a:hover {
+    box-shadow: 0px 0px 15px 0px #000000;
+    transform: scale(1.09);
+    opacity: 1;
+    z-index: 1;
 }
 
 .contact-social-area .img-wrapper img {
@@ -420,8 +523,6 @@ footer #color-boxes {
     }
 
     /* >========= Nav-Bar =========< */
-
-
     #navbar {
         display: flex;
         align-items: center;
@@ -447,7 +548,7 @@ footer #color-boxes {
     #hero-section {
         display: flex;
         flex-wrap: nowrap;
-        background: url(../images/bg-3.png) no-repeat center center/cover fixed;
+        background: url(../images/bg-3.png) center center/cover no-repeat content-box fixed;
         flex-direction: column-reverse;
         width: fit-content;
         height: 90vh;
@@ -511,8 +612,46 @@ footer #color-boxes {
         margin-left: 25px;
     }
 
+    /* >========= Skill Section =========< */
+    .skill-heading-area {
+        justify-content: center;
+    }
+
+    /* >========= Skill Section =========< */
+    .projects-wrapper {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .projects-wrapper>* {
+        width: 20rem !important;
+        height: 10rem !important;
+    }
+
+
+
     /* >========= Contact Section =========< */
+    #contact-section {
+        gap: 0px;
+        margin: 0% 5%;
+    }
+
     .contact-social-area .img-wrapper img {
         height: 40px;
+    }
+
+    .contact-text-area h5 {
+        margin: 0% 0% 0% 10%;
+        font-size: medium;
+    }
+
+    .contact-text-area a {
+        margin: 0% 10% 10% 0%;
+        font-size: x-small;
+    }
+
+    .img-wrapper {
+        gap: 2px;
     }
 }
