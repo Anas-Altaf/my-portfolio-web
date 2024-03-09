@@ -46,7 +46,7 @@ img {
     --prj-8: url(../images/Project-8.png) center center/cover no-repeat content-box scroll;
 }
 
-/* Extra CSS  */
+/* Extra CSS  */ 
 .color-purple-0 {
     color: var(--purple-0);
 }
