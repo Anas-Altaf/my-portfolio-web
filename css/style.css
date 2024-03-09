@@ -348,13 +348,12 @@ body {
     background: var(--prj-1);
     border-radius: 5px;
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     justify-content: center;
     text-decoration: none;
-    color: white;
+    color: black;
     opacity: 0.9;
     filter: saturate(1.2);
-    font-family: "Source Code Pro", sans-serif;
     transition: all 0.5s ease 0s;
 }
 
