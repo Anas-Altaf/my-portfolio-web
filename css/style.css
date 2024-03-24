@@ -64,7 +64,7 @@ body {
 
 /* >========= NAVBAR =========< */
 #navbar {
-    background: url(../images/bg-2.png) center center/cover no-repeat content-box fixed;
+    background: url(https://images.unsplash.com/photo-1708879138761-445ad22371c6) center center/cover no-repeat content-box fixed;
     background-color: var(--blue-0);
     display: grid;
     grid-template-columns: 1fr 1fr;
