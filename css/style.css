@@ -555,7 +555,7 @@ footer #color-boxes {
     #hero-section {
         display: flex;
         flex-wrap: nowrap;
-        background: url(../images/bg-5.jpg) center center/cover no-repeat content-box fixed;
+        background: url(https://images.unsplash.com/photo-1620121692029-d088224ddc74) center center/cover no-repeat content-box fixed;
         flex-direction: column-reverse;
         width: fit-content;
         height: 90vh;
@@ -632,7 +632,7 @@ footer #color-boxes {
     }
 
     .projects-wrapper>* {
-        width: 20rem !important;
+        width: 23rem !important;
         height: 10rem !important;
     }
 
