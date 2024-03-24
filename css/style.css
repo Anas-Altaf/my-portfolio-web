@@ -555,7 +555,7 @@ footer #color-boxes {
     #hero-section {
         display: flex;
         flex-wrap: nowrap;
-        background: url(../images/bg-4.jpeg) center center/cover no-repeat content-box fixed;
+        background: url(../images/bg-5.jpg) center center/cover no-repeat content-box fixed;
         flex-direction: column-reverse;
         width: fit-content;
         height: 90vh;
