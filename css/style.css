@@ -45,6 +45,11 @@ img {
     --prj-6: url(../images/Project-6.png) var(--image-properties);
     --prj-7: url(../images/Project-7.png) var(--image-properties);
     --prj-8: url(../images/Project-8.png) var(--image-properties);
+    /* Skill Animations Name  */
+    --skil-1: 81%;
+    --skil-2: 70%;
+    --skil-3: 75%;
+    --skil-4: 80%;
 }
 
 /* Extra CSS  */
@@ -321,7 +326,10 @@ body {
     font-family: "Source Code Pro", sans-serif !important;
     border-radius: 25px !important;
     border-right: 1px solid black !important;
+
 }
+
+
 
 .skill-heading-area {
     display: flex;
